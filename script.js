@@ -1,8 +1,23 @@
-// script.js
-
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
+
+
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 50) {
+        header.style.background = "rgba(0,0,0,0.9)";
+    } else {
+        header.style.background = "rgba(0,0,0,0.7)";
+    }
 });
