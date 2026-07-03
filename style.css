@@ -318,3 +318,8 @@ footer{
 .nav-icon i:hover {
     color: #ffcc00 !important; /* Hover karne par yellow/gold color */
 }
+.nav-icon i {
+    color: #ffffff !important; /* Icons ko white color dene ke liye */
+    font-size: 20px;           /* Icons ka size badhane ke liye */
+    margin-left: 15px;         /* Icons ke darmiyan gap ke liye */
+}
