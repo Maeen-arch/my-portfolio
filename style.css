@@ -1,0 +1,197 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero h2{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.btn{
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+    display:inline-block;
+}
+
+.hero-img img{
+    width:350px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.about-content{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.skills-container,
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card,
+.project-card,
+.service-card,
+.contact-box{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i,
+.service-card i{
+    font-size:50px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.contact-box{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact-box p{
+    margin:20px 0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+        text-align:center;
+        padding:30px 0;
+        transition:.4s;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-img img{
+        width:250px;
+    }
+
+}
