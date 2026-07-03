@@ -331,3 +331,7 @@ nav, .navMenu, #navMenu, [id="navMenu"] {
     justify-content: center;
     text-decoration: none !important;
 }
+header {
+    background-color: #6a0dad !important; /* Poori top bar ko purple karne ke liye */
+    padding: 15px 5%;                    /* Spacing dene ke liye */
+}
