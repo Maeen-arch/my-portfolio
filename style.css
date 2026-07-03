@@ -303,3 +303,18 @@ footer{
     justify-content:center;
   }
 }
+#navMenu {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Links ke darmiyan fasla */
+}
+
+.nav-icon i {
+    font-size: 20px !important; /* Icons ka size navbar ke mutabiq */
+    color: #ffffff !important;  /* Icons ka color white */
+    margin-left: 5px;
+}
+
+.nav-icon i:hover {
+    color: #ffcc00 !important; /* Hover karne par yellow/gold color */
+}
