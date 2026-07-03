@@ -300,11 +300,14 @@ footer{
 
  .hero-buttons, .socials {
     justify-content: center;
-}
+
 #navMenu {
     display: flex;
     align-items: center;
     gap: 15px; /* Links ke darmiyan fasla */
+    background-color: #6a0dad !important; /* Poori navbar ko purple karne ke liye */
+    padding: 10px 20px;                   /* Navbar ke andar thodi spacing */
+    border-radius: 8px;                   /* Corners soft karne ke liye */
 }
 
 .nav-icon i {
