@@ -302,13 +302,13 @@ footer{
     justify-content: center;
 }
 
-#navMenu {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Links ke darmiyan fasla */
-    background-color: #6a0dad !important; /* Poori navbar ko purple karne ke liye */
-    padding: 10px 20px;                   /* Navbar ke andar thodi spacing */
-    border-radius: 8px;                   /* Corners soft karne ke liye */
+nav, .navMenu, #navMenu, [id="navMenu"] {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    background-color: #6a0dad !important; /* Purple color */
+    padding: 15px 25px !important;
+    border-radius: 8px !important;
 }
 
 .nav-icon i {
