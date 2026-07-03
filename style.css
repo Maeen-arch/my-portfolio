@@ -298,10 +298,8 @@ footer{
     width:280px;
   }
 
-  .hero-buttons,
-  .socials{
-    justify-content:center;
-  }
+ .hero-buttons, .socials {
+    justify-content: center;
 }
 #navMenu {
     display: flex;
@@ -322,4 +320,10 @@ footer{
     color: #ffffff !important; /* Icons ko white color dene ke liye */
     font-size: 20px;           /* Icons ka size badhane ke liye */
     margin-left: 15px;         /* Icons ke darmiyan gap ke liye */
+}
+.nav-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
 }
