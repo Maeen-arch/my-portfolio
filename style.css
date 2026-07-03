@@ -298,8 +298,9 @@ footer{
     width:280px;
   }
 
- .hero-buttons, .socials {
+.hero-buttons, .socials {
     justify-content: center;
+}
 
 #navMenu {
     display: flex;
